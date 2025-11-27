@@ -1,0 +1,17 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+ color: white;
+  background: linear-gradient(25deg,rgb(215, 179, 179), rgb(107, 107, 185)),rgb(99, 194, 99);
+   transition: 3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transform:5s rotate3d(95);
+    color: whitesmoke;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}

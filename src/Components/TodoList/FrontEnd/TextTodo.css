@@ -1,0 +1,113 @@
+.todo-inputs-con {
+  position: sticky;
+  top: 0;                        /* Stick to top always */
+  left: 0;
+  width:100%; 
+  background: linear-gradient(25deg,rgb(215, 179, 179), rgb(107, 107, 185)),rgb(99, 194, 99);
+  padding: 10px 50px;               /* full width */
+ margin: auto;
+  z-index: 9;                 /* highest layer */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* content container margin (otherwise inputs overlap content) */
+.uptime-container p{
+         text-align: center;
+         padding: 5px;
+         font-size:25px;
+            font-weight: 700;
+            color: black;
+            
+}
+
+
+/* INPUT FIELDS */
+.input-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field,
+.textarea-field {
+  flex: 1;
+  padding: clamp(0.5rem, 1vw, 0.5rem);
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+}
+
+/* FOCUS EFFECT */
+.input-field:focus,
+.textarea-field:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.p-error{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5px;
+    color: rgb(104, 13, 13);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+button {
+    display: inline-block;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 15px 55px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: rgb(16, 16, 115);
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+@media (max-width:768px) {
+  .todo-inputs-con{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.507);
+  }
+
+  .input-con{
+    display: block;
+    
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .input-con input{
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  button{
+   
+    width:75%;
+    margin: auto;
+    background-color: rgba(93, 108, 66, 0.714);
+  }
+
+ 
+}

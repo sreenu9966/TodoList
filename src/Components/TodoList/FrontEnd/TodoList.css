@@ -1,0 +1,156 @@
+/* UNIVERSAL RESET *
+/* ROOT VARIABLE for dynamic scaling */
+
+/* MAIN CONTAINER */
+.todo-container {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: clamp(0.5rem, 2vw, 2rem);
+   background: linear-gradient(25deg,rgb(215, 179, 179), rgb(107, 107, 185)),rgb(99, 194, 99);
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: scroll;
+}
+
+
+
+
+
+.todo-container h4{
+    text-align: center;
+    color: black;
+}
+/* TABLE CONTAINER for small screens */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  height:100vh ;
+   background: linear-gradient(25deg,rgb(222, 222, 228));
+   
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.todo-items-mobile{
+    display: none;
+}
+
+/* TABLE HEADER & CELL */
+table th,
+table td {
+    width: 10%;
+  border: 5px solid #ccc;
+  text-align: center;
+  
+}
+table th{
+   padding: 5px;
+    overflow-x: scroll;
+}
+
+table td{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0;
+    color: grey;
+}
+
+table th {
+  background: #0096c7;
+  color: white;
+ 
+  
+}
+
+/* ROW STRIPES */
+table tr:nth-child(even) {
+color: black;
+
+  font-weight: 600;
+}
+
+/* ACTION BUTTON STYLES */
+.btn-class-cl,
+.btn-class-c2{
+   width:40%;
+  padding: 5px;
+  margin: 5px ;
+
+}
+
+.btn-class-cl{
+    background-color:#0096c7;
+}
+
+
+
+.btn-class-c2{
+    background-color: red;
+}
+
+/* Edit Button */
+table button:nth-child(1) {
+  
+  color: white;
+}
+
+/* Delete Button */
+table button:nth-child(2) {
+ 
+  color: white;
+}
+
+/* EXTREME RESPONSIVE SUPPORT */
+
+/* Very tiny screens: old keypad phones, Jio small screens */
+@media (max-width: 778px) {
+  .todo-container {
+    padding: 0.5rem;
+  }
+
+  table {
+   display: none;
+  }
+
+  .todo-items-mobile{
+    display: block;
+    color: black;
+    padding: 10px;
+    background-color:white;
+    margin-top: 10px;
+    border: 2px solid red;
+  }
+
+  .todo-items-mobile hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px dashed red;
+  }
+
+ 
+}
+
+/* Smartwatches < 200px */
+@media (max-width: 200px) {
+  .todo-container h1 {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.7rem;
+  }
+}
+
+/* Ultra large screens like 100-inch TVs, 8K displays */
+@media (min-width: 5000px) {
+  html {
+    font-size: 40px;
+  }
+}

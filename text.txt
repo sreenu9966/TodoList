@@ -1,0 +1,114 @@
+// import { useReducer } from "react";
+
+
+// function reducer(state, action) {
+//     switch (action.type) {
+//         case "ADD-INPUT":
+//             return { ...state, input: action.payload };
+//         case "ADD_TODO":
+//             if (state.input.trim() === "") 
+//                 return state;
+//             return {
+//                 ...state,
+//                 input: "",
+//                 todos: [...state.todos, {
+//                     id: Date.now(),
+//                     text: state.input
+//                 }]
+//             };
+//         case "EDIT_TODO":
+//             return {
+//                 ...state,
+//                 todos: state.todos.map((item) =>
+//                     item.id === action.payload ? { ...item, text: action.payload.text } : item
+//                 )
+//             }
+
+//         default:
+//             return state;
+//     }
+
+    
+// }
+
+// const TodoApp = () => {
+//     const initialState = {
+//         input: "",
+//         todos: []
+//     };
+//     const [state, dispatch] = useReducer(reducer, initialState);
+
+//     return (
+//         <div>
+//             <h1>Todo App</h1>
+//             <form onSubmit={(e) => {
+//                 e.preventDefault();
+//                 dispatch({ type: "ADD_TODO" });
+//             }}>
+//                 <input 
+//                     type="text" 
+//                     value={state.input}
+//                     onChange={(e) => dispatch({ type: "ADD-INPUT", payload: e.target.value })} 
+//                 />
+//                 <button type="submit">Add Todo</button>
+//             </form>
+//             <ul>
+//                 {state.todos.map((todo)=> 
+//                 <li key={todo.id}>
+                    
+//                     {todo.id}-
+//                     {todo.text}
+//                 <button onClick={()=> dispatch({type:"EDIT_TODO"})}>Edit</button> 
+//                 <button onClick={()=> dispatch({type:"DEL_TODO"})}>Delete</button></li>
+
+//                 )}
+//             </ul>
+//         </div>
+//     );
+// };
+
+// export default TodoApp
+
+
+import React, { useState } from 'react'
+
+const TodoApp = () => {
+    const [newTodo,SetNewTodo] = useState([]);
+
+    const onChangeHandler = () =>{
+        SetNewTodo((e)=>e.target.value)
+        
+    }
+    console.log(onChangeHandler);
+    
+
+    const handleSubmit = () =>{
+        SetNewTodo(newTodo)
+    }
+
+    console.log(handleSubmit);
+
+    console.log(newTodo);
+    
+    
+
+  return (
+    <div>
+        <div className="todo-fileds">
+            <input type="text" id='name' value={newTodo} onChange={onChangeHandler} />
+        <button onClick={handleSubmit}>Add</button>
+        </div>
+        <div>
+            <ul>
+              {newTodo.map((item,index)=>{
+                return(
+                    <li key={index}>{item.newTodo}</li>
+                )
+              })}
+            </ul>
+        </div>
+    </div>
+  )
+}
+
+export default TodoApp
