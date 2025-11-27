@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
-import TextInput from './Components/Feed/TextInput'
-import TodoApp from './Components/Todo/TodoApp'
+
 import TodoList from './Components/TodoList/FrontEnd/TodoList'
 import TextTodo from './Components/TodoList/FrontEnd/textTodo'
 
