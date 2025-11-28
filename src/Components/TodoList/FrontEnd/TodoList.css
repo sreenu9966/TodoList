@@ -1,7 +1,4 @@
-/* UNIVERSAL RESET *
-/* ROOT VARIABLE for dynamic scaling */
-
-/* MAIN CONTAINER */
+/* 
 .todo-container {
   width: 100%;
   margin: 0.5rem auto;
@@ -22,7 +19,8 @@
     text-align: center;
     color: black;
 }
-/* TABLE CONTAINER for small screens */
+
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -43,7 +41,6 @@ table {
     display: none;
 }
 
-/* TABLE HEADER & CELL */
 table th,
 table td {
     width: 10%;
@@ -70,14 +67,13 @@ table th {
   
 }
 
-/* ROW STRIPES */
+
 table tr:nth-child(even) {
 color: black;
 
   font-weight: 600;
 }
 
-/* ACTION BUTTON STYLES */
 .btn-class-cl,
 .btn-class-c2{
    width:40%;
@@ -96,21 +92,17 @@ color: black;
     background-color: red;
 }
 
-/* Edit Button */
 table button:nth-child(1) {
   
   color: white;
 }
 
-/* Delete Button */
 table button:nth-child(2) {
  
   color: white;
 }
 
-/* EXTREME RESPONSIVE SUPPORT */
 
-/* Very tiny screens: old keypad phones, Jio small screens */
 @media (max-width: 778px) {
   .todo-container {
     padding: 0.5rem;
@@ -138,7 +130,6 @@ table button:nth-child(2) {
  
 }
 
-/* Smartwatches < 200px */
 @media (max-width: 200px) {
   .todo-container h1 {
     font-size: 1rem;
@@ -148,9 +139,8 @@ table button:nth-child(2) {
   }
 }
 
-/* Ultra large screens like 100-inch TVs, 8K displays */
 @media (min-width: 5000px) {
   html {
     font-size: 40px;
   }
-}
+} */

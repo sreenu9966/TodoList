@@ -1,12 +1,12 @@
-.todo-inputs-con {
+/* .todo-inputs-con {
   position: sticky;
-  top: 0;                        /* Stick to top always */
+  top: 0;                      
   left: 0;
   width:100%; 
   background: linear-gradient(25deg,rgb(215, 179, 179), rgb(107, 107, 185)),rgb(99, 194, 99);
-  padding: 10px 50px;               /* full width */
+  padding: 10px 50px;               
  margin: auto;
-  z-index: 9;                 /* highest layer */
+  z-index: 9;                 
   color: black;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-/* content container margin (otherwise inputs overlap content) */
+
 .uptime-container p{
          text-align: center;
          padding: 5px;
@@ -25,7 +25,7 @@
 }
 
 
-/* INPUT FIELDS */
+
 .input-con {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +43,7 @@
   font-size: clamp(0.8rem, 2.5vw, 1.1rem);
 }
 
-/* FOCUS EFFECT */
+
 .input-field:focus,
 .textarea-field:focus {
   outline: none;
@@ -62,7 +62,7 @@
     margin-bottom: 20px;
 }
 
-/* BUTTON */
+
 button {
     display: inline-block;
     width: auto;
@@ -110,4 +110,4 @@ button:active {
   }
 
  
-}
+} */
